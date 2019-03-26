@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        body{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="mycanvas"></canvas>
+
+
+<script src="game.js"></script>
+<script src="background.js"></script>
+<script src="land.js"></script>
+<script src="pipe.js"></script>
+<script src="bird.js"></script>
+<script src="manager.js"></script>
+<script>
+    //以对象的形式传递参数
+    var game = new Game({
+        "canvasid":"#mycanvas",
+        "reasourceurl":"R.json"
+    });
+</script>
+
+</body>
+</html>
